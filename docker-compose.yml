@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  sinatra:
+    build: .
+    command: ./start.sh
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "4567:4567"
